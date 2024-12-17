@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmação | Whispering Pages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <!-- Link para JavaScript - NÃO EXCLUIR -->
+  <script type="module" src="./scripts/checkout.js" defer></script>
+</head>
+<body class="page-checkout">
+    <!-- Cabeçalho -->
+    <header id="header">
+      <div class="login-container">
+          <i class="bi bi-list"></i>
+          <div class="login">
+              <a href="">Sign up / login</a>
+          </div>
+      </div>
+      <div class="logo">
+          <h1>Whispering Pages</h1>
+      </div>
+      <nav class="menu">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Shop</a></li>
+              <li><a href="adm.html">History</a></li>
+          </ul>
+      </nav>
+      <div class="search-bar">
+          <input type="text" id="search" placeholder="  Procure sua próxima aventura...">
+      </div>
+    </header>
+    
+    <!-- Componente Checkout -->
+    <main class="product main-content container">
+      <div class="product text-container">
+          <h2 class="main-text">Checkout</h2>
+          <p>Verifique os itens do carrinho e finalize agora</p>
+      </div>
+    
+      <section class="product text-container">
+        <div id="checkout">
+          <div class="grid_col_1">
+            
+          </div> 
+
+          <div class="box-price">
+            <div class="grid_col_2">
+              <div class="total_container container-flex column">
+                <div class="total container-flex">
+                    <h3>Subtotal</h3>
+                    <h3>R$ 0.00</h3>
+                </div>
+                <div class="total container-flex">
+                    <h3>Frete</h3>
+                    <h3>R$ 0.00</h3>
+                </div>
+                <div class="total container-flex total-final">
+                    <h3>Total</h3>
+                    <h3>R$ 0.00</h3>
+                </div>
+              </div>
+
+              <!-- Botão de Pagamento -->
+              <div class="button-container">
+                <a href="./payment.html">
+                  <button class="button checkout_btn">IR PARA PAGAMENTO</button>
+                </a>
+              </div>
+
+              <!-- Cálculo do Frete -->
+              <div class="freight_container">
+                <form action="">
+                  <label for="cep">Calcule seu frete</label>
+                  <div class="container-flex">
+                    <input type="text" id="cep" placeholder="Digite o CEP da entrega">
+                    <button class="button">OK</button>
+                  </div>
+                  <p><a href="">Não sei meu CEP</a></p>
+                </form>
+              </div>
+
+              <!-- Opções de Entrega -->
+              <div class="freight_pricing container-flex">
+                <div class="radio">
+                  <input type="radio" name="frete" id="option1">
+                </div>
+                <div class="pricing">
+                  <h3>R$ 19,00</h3>
+                  <p>Entrega em até 7 dias úteis</p>
+                </div>
+              </div>
+
+              <div class="freight_pricing container-flex">
+                <div class="radio">
+                  <input type="radio" name="frete" id="option2">
+                </div>
+                <div class="pricing">
+                  <h3>R$ 25,00</h3>
+                  <p>Entrega em até 3 dias úteis</p>
+                </div>
+              </div>
+
+              <div class="freight_pricing container-flex">
+                <div class="radio">
+                  <input type="radio" name="frete" id="option3">
+                </div>
+                <div class="pricing">
+                  <h3>R$ 30,00</h3>
+                  <p>Entrega no próximo dia útil</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-bg">
+        <section class="footer-nav container container-flex">
+          <div class="footer-nav-container">
+            <div class="footer-navitem-container">
+              <h3>Institucional</h3>
+              <ul>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="contacts.html">Fale Conosco</a></li>
+                <li><a href="">Política de Troca</a></li>
+                <li><a href="">Política de Privacidade</a></li>
+                <li><a href="">Política de Envio</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-social-container">
+            <h3>Siga nossas redes sociais</h3>
+            <h5>Acompanhe as novidades pelas nossas redes sociais</h5>
+            <div class="social-icons">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-tiktok"></i>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+</body>
+</html>
